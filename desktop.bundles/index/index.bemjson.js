@@ -20,7 +20,23 @@ module.exports = {
                         },
                         {
                             elem : 'right',
-                            content : 'right here'
+                            content : [
+                                {
+                                    block : 'logo',
+                                    content : [
+                                        {
+                                            block : 'image',
+                                            attrs : {
+                                                src : '/desktop.blocks/logo/logo.png',
+                                            }
+                                        },
+                                        {
+                                            elem : 'slogan',
+                                            content : 'A new way of thinking',
+                                        },
+                                    ]
+                                },
+                            ]
                         }
                     ]
                 },
