@@ -16,7 +16,22 @@ module.exports = {
                     content : [
                         {
                             elem : 'left',
-                            content : 'left here'
+                            content : {
+                                tag : 'form',
+                                attrs : { action : 'https://yandex.ru/yandsearch' },
+                                content : [
+                                    {
+                                        block : 'input',
+                                        name : 'text',
+                                        val : 'Find',
+                                    },
+                                    {
+                                        block : 'button',
+                                        mods : { type : 'submit' },
+                                        content : 'Search',
+                                    },
+                                ]
+                            }
                         },
                         {
                             elem : 'right',
@@ -25,19 +40,23 @@ module.exports = {
                                     block : 'logo',
                                     content : [
                                         {
-                                            block : 'image',
-                                            attrs : {
-                                                src : '/desktop.blocks/logo/logo.png',
-                                            }
-                                        },
-                                        {
-                                            elem : 'slogan',
-                                            content : 'A new way of thinking',
-                                        },
+                                            block : 'link',
+                                            url : 'https://bem.info/platform/tutorials/start-with-project-stub/',
+                                            content : [
+                                                {
+                                                    block : 'image',
+                                                    attrs : { src : '/desktop.blocks/logo/logo.png' }
+                                                },
+                                                {
+                                                    elem : 'slogan',
+                                                    content : 'A new way of thinking',
+                                                },
+                                            ]
+                                        }
                                     ]
                                 },
                             ]
-                        }
+                        },
                     ]
                 },
             ]
