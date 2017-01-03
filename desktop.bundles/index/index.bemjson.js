@@ -10,6 +10,11 @@ module.exports = {
     content : [
         {
             block : 'head',
+            mix : [
+                {
+                    block : 'box',
+                },
+            ],
             content : [
                 {
                     block : 'layout',

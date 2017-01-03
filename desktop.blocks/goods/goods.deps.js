@@ -1,6 +1,7 @@
 ({
     shouldDeps : [
         'link',
+        'box',
     ]
 })
 

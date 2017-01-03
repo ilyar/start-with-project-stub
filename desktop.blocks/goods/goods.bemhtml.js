@@ -7,6 +7,11 @@ block('goods')(
                 {
                     elem : 'item',
                     elemMods : { new : item.new && 'yes' },
+                    mix : [
+                        {
+                            block : 'box',
+                        },
+                    ],
                     content : [
                         {
                             elem : 'title',
