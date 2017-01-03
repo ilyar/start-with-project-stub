@@ -8,6 +8,7 @@
     "libs"
   ],
   "dependencies": {
+    "j": "ilyar/j#bae502d",
     "bem-components": "^5.0.0"
   }
 }
