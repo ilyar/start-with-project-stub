@@ -21,6 +21,7 @@
   "devDependencies": {
     "autoprefixer": "^6.6.0",
     "bem": "^2.0.0",
+    "browser-sync": "^2.18.5",
     "enb": "^1.3.0",
     "enb-bem-techs": "^2.2.1",
     "enb-bemxjst": "^7.5.0",
@@ -51,6 +52,7 @@
     "ym": "^0.1.2"
   },
   "scripts": {
+    "watch": "enb server & browser-sync start --files \"*.blocks/**/*, *.bundles/**/*.bemjson.js\" --proxy 0.0.0.0:8080",
     "start": "enb server",
     "postinstall": "npm run deps",
     "deps": "bower i --allow-root"
