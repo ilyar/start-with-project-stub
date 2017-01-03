@@ -1,0 +1,10 @@
+.input
+{
+    position: relative;
+    top: 44px;
+}
+
+.input__control
+{
+    width: 200px;
+}
