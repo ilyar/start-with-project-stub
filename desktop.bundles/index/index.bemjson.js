@@ -13,6 +13,7 @@ module.exports = {
             mix : [
                 {
                     block : 'box',
+                    js : true,
                 },
             ],
             content : [
@@ -63,6 +64,10 @@ module.exports = {
                             ]
                         },
                     ]
+                },
+                {
+                    block : 'box',
+                    elem: 'switcher',
                 },
             ]
         },
